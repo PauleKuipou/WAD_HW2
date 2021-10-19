@@ -1,0 +1,33 @@
+/* fetch online data*/
+
+url = "https://api.npoint.io/d7ca74b0495f028e497d"; //change data
+
+$(document).ready(function () {
+  $.getJSON(url, function (result) {
+    $.each(result, function (i, post) {
+      dom_elements = `
+              <div class="post" id="post-${i}">
+              <div class="post-top" id="top-${i}"">
+              <img src="./photos/account.png" alt="Account profile">
+              <div>${post.create_time}</div>
+              </div>
+              <br>${post.post_content}
+              <div class="like-button">
+              <button>
+              <img src="./photos/likebutton.jpg" alt=Like button">
+              </button>
+              </div>
+              </div>
+              `;
+
+      $("#post_container").append(dom_elements);
+
+      /*check if the post contains image*/
+      if (post.post_img) {
+        $("#top-" + i).after(
+          `<div class='post-image'> <img src="./photos/${post.post_img}" alt='post photo'></div>`
+        );
+      }
+    });
+  });
+});
