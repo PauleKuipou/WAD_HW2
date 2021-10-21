@@ -1,10 +1,11 @@
 a ~ p {
     margin-top: 20px;
     color: black;
-    font-family:cursive;
+    font-family: cursive;
     font-size: 20px;
 }
-.login{
+
+.login {
     background-color: #1778BD;
     height: 100%;
     display: flex;
@@ -29,7 +30,7 @@ a ~ p {
     width: 300px;
     height: 450px;
     text-align: center;
-    padding: 0px ;
+    padding: 0px;
 }
 
 .photos {
@@ -38,6 +39,7 @@ a ~ p {
     width: 80px;
     height: 80px;
 }
+
 .notes {
     width: 80px;
     height: 80px;
@@ -51,7 +53,8 @@ a ~ p {
     text-align: center;
     background-color: white;
 }
-.box input, .box input{
+
+.box input, .box input {
     border: 0;
     display: block;
     margin: 12px auto;
@@ -63,9 +66,10 @@ a ~ p {
     border-radius: 10px;
     outline: none;
 }
+
 .box button {
     border: 0px;
-    background-color:#1778BD;
+    background-color: #1778BD;
     border: 2px #1778BD solid;
     display: block;
     margin: 12px auto;
@@ -78,29 +82,38 @@ a ~ p {
     cursor: pointer;
     outline: none;
 }
+
 .box button:hover {
     background-color: skyblue;
 }
+
 nav {
+    position: fixed;
     display: flex;
     background-color: white;
     align-items: center;
     width: 100%;
     padding-bottom: 5px;
+    top: 0px;
 }
-nav div{
+
+nav div {
     width: 33%;
 }
-nav div img{
+
+nav div img {
     height: 40px;
 }
+
 nav div.search-container > input {
     box-sizing: border-box;
     height: 30px;
     width: 75%;
     border: 1px solid #1778BD;
 }
-
+.search-container{
+    display: flex;
+}
 nav div.search-container > button {
     box-sizing: border-box;
     height: 30px;
@@ -111,29 +124,36 @@ nav div.search-container > button {
     font-size: 15px;
     color: white;
 }
-.search-container button:hover{
+
+.search-container button:hover {
     background-color: skyblue;
 }
-#account{
+
+#account {
     display: flex;
     justify-content: flex-end;
 }
+
 .layout {
+    padding-top: 50px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     height: fit-content;
 }
+
 .side {
     background-color: #1778BD;
     width: 33%;
 }
-.center{
+
+.center {
     background-color: white;
     width: 60%
- }
-.post{
-    
+}
+
+.post {
+
     margin: 20px auto;
     border: 1px solid darkgray;
     border-radius: 5%;
@@ -143,15 +163,30 @@ nav div.search-container > button {
     font-size: 20px;
     box-shadow: 5px 5px 5px 5px gray;
 }
-.post-top{
+
+.post-top {
     display: flex;
     justify-content: space-between;
-    height: 30px;
     font-weight: normal;
     color: gray;
     font-size: 15px;
 }
-div + .post-image{
+
+.author-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.author-profile img {
+    width: 30px;
+}
+
+.author-profile .author-name {
+    align-self: center;
+    padding-left: 5px;
+}
+
+div + .post-image {
     display: flex;
     justify-content: center;
     height: 350px;
@@ -159,15 +194,17 @@ div + .post-image{
     overflow: hidden;
 }
 
-.like-button button{
+.like-button button {
     border: none;
     padding: 5px;
     background-color: white;
     margin-top: 10px;
 }
-.like-button button:hover{
+
+.like-button button:hover {
     background-color: skyblue;
 }
-.like-button img{
+
+.like-button img {
     height: 30px;
 }
