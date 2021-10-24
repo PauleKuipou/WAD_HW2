@@ -133,6 +133,12 @@ nav div.search-container > button {
     display: flex;
     justify-content: flex-end;
 }
+#account .userImg {
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40%;
+}
 
 .layout {
     padding-top: 50px;
@@ -145,6 +151,19 @@ nav div.search-container > button {
 .side {
     background-color: #1778BD;
     width: 33%;
+}
+
+.userMenu {
+    margin: 20px auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-bottom: 1px solid #1778BD;
+    background-color: rgb(255, 255, 240);
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .center {
