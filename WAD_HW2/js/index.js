@@ -61,4 +61,16 @@ $(document).ready(function () {
             }
         });
     });
+
+    /* hides the user menu at first, but it can be seen if clicked on*/
+    dropdown_menu = `<div id="menuContent">
+    <p class="userMenu">John Doe</p>
+    <p class="userMenu">john.doe@example.com</p>
+    </div>`
+    $("#right_side").append(dropdown_menu);
+    $("#menuContent").hide();
+
+    /**if the user logo is clicked then it displays their info */
+    $("#userButton").click(function() {
+      $("#menuContent").toggle()});
 });
