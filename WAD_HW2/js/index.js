@@ -1,14 +1,14 @@
 /* fetch online data*/
 
-url = "https://api.npoint.io/d7ca74b0495f028e497d"; //change data
+/*url = "https://api.npoint.io/d7ca74b0495f028e497d"; //change data
 
-/*$(document).ready(function () {
-  $.getJSON(url, function (result) {
-    $.each(result, function (i, post) {
-      dom_elements = `
+$(document).ready(function () {
+    $.getJSON(url, function (result) {
+        $.each(result, function (i, post) {
+            dom_elements = `
               <div class="post" id="post-${i}">
               <div class="post-top" id="top-${i}"">
-              <img src="./photos/account.png" alt="Account profile">
+              <div class="author-profile"><img src="./photos/account.png" alt="Account profile"><div class="author-name">${post.author_name}</div></div>
               <div>${post.create_time}</div>
               </div>
               <br>${post.post_content}
@@ -20,13 +20,13 @@ url = "https://api.npoint.io/d7ca74b0495f028e497d"; //change data
               </div>
               `;
 
-      $("#post_container").append(dom_elements);
+            $("#post_container").append(dom_elements);
 
-      /*check if the post contains image*/
+            /*check if the post contains image*/
 /*if (post.post_img) {
-  $("#top-" + i).after(
-    `<div class='post-image'> <img src="./photos/${post.post_img}" alt='post photo'></div>`
-  );
+    $("#top-" + i).after(
+        `<div class='post-image'> <img src="./photos/${post.post_img}" alt='post photo'></div>`
+    );
 }
 });
 });
